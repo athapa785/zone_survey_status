@@ -1,0 +1,42 @@
+{
+    "Linac West": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    },
+    "Linac Middle": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    },
+    "Linac East": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    },
+    "BSY": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    },
+    "BTH-W": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    },
+    "BTH-E": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    },
+    "EBD-FEE": {
+        "state": "complete_cleared",
+        "timestamp": "2025-05-13 05:10:16",
+        "changes": "no changes"
+    },
+    "HX-2": {
+        "state": "not_started",
+        "timestamp": "",
+        "changes": ""
+    }
+}
