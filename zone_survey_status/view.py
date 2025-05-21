@@ -22,9 +22,9 @@ class MainWindow(QMainWindow):
         self.resize(1000, 700)
 
         # Add a status bar purely to host the grip
-        status = QStatusBar(self)
-        status.setSizeGripEnabled(True)
-        self.setStatusBar(status)
+        #status = QStatusBar(self)
+        #status.setSizeGripEnabled(True)
+        #self.setStatusBar(status)
         
         # Initialize state manager
         self.state_manager = StateManager()
@@ -62,12 +62,19 @@ class MainWindow(QMainWindow):
         reset_btn.clicked.connect(self.reset_all)
         bottom_layout.addWidget(reset_btn)
         
-        # Add a small archive button
+        # Add an archive button
         archives_btn = QPushButton("Archive")
         archives_btn.setMinimumHeight(40)
         archives_btn.setMaximumWidth(100)
         archives_btn.clicked.connect(self.open_archives)
         bottom_layout.addWidget(archives_btn)
+        
+        # Add a cool script button
+        cool_btn = QPushButton("Josh's Cool Script")
+        cool_btn.setMinimumHeight(40)
+        cool_btn.setMinimumWidth(150)
+        cool_btn.clicked.connect(self.open_coolscript)
+        bottom_layout.addWidget(cool_btn)
         
         # Add the bottom container to the main layout
         layout.addWidget(bottom_container, 2, 0, 1, 4)
@@ -153,3 +160,13 @@ class MainWindow(QMainWindow):
                 "Error",
                 f"Could not open archives directory:\n{str(e)}"
             )
+            
+            
+    def open_coolscript(self):
+        """
+        Open Josh's cool script.
+        """
+        title = "Cool Script"
+        bash = "cd /home/physics/joshbrn/workspace/cool_script/; python cool_script.py"
+        
+        subprocess.Popen(["xterm", "-T", title, "-e", bash])

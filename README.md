@@ -33,7 +33,7 @@ This application provides a visual interface to monitor and update the survey st
 
 ## Technical Details
 
-- Built with PyQt5 and qtmodern for a modern UI appearance
+- Built with PyQt5 and qdarkstyle (light mode) for a modern UI appearance
 - State information is stored in JSON format
 - Backups are saved with user information and timestamps
 - Supports cross-platform operation (Windows, macOS, Linux)
@@ -43,7 +43,7 @@ This application provides a visual interface to monitor and update the survey st
 1. Ensure Python 3.6+ is installed
 2. Install required dependencies:
    ```
-   pip install PyQt5 qtmodern
+   pip install PyQt5 qdarkstyle
    ```
 3. Clone or download this repository
 4. Run the application:
